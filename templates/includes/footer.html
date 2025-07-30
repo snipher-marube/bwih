@@ -1,0 +1,95 @@
+{% load static %}
+<footer class="bg-[#044e73] text-white pt-16 pb-8">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+            <!-- Column 1: About -->
+            <div>
+                <h3 class="text-xl font-bold mb-6 border-b border-white/20 pb-3">About Us</h3>
+                <img src="{% static 'logo/bwiLogo.png' %}" alt="Blooming World International Hospital" class="h-10 mb-4">
+                <p class="mb-4 text-white/90">Providing world-class healthcare services with compassion and cutting-edge technology since 1995.</p>
+                <div class="flex space-x-4">
+                    <a href="#" aria-label="Facebook" class="text-white hover:text-[#b3e0ff] transition">
+                        <i class="fab fa-facebook-f text-lg"></i>
+                    </a>
+                    <a href="#" aria-label="Twitter" class="text-white hover:text-[#b3e0ff] transition">
+                        <i class="fab fa-twitter text-lg"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram" class="text-white hover:text-[#b3e0ff] transition">
+                        <i class="fab fa-instagram text-lg"></i>
+                    </a>
+                    <a href="#" aria-label="LinkedIn" class="text-white hover:text-[#b3e0ff] transition">
+                        <i class="fab fa-linkedin-in text-lg"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div>
+                <h3 class="text-xl font-bold mb-6 border-b border-white/20 pb-3">Quick Links</h3>
+                <ul class="space-y-3">
+                    <li><a href="#" class="text-white/90 hover:text-white transition hover:underline">Home</a></li>
+                    <li><a href="#" class="text-white/90 hover:text-white transition hover:underline">About Us</a></li>
+                    <li><a href="#" class="text-white/90 hover:text-white transition hover:underline">Services</a></li>
+                    <li><a href="#" class="text-white/90 hover:text-white transition hover:underline">Doctors</a></li>
+                    <li><a href="#" class="text-white/90 hover:text-white transition hover:underline">Facilities</a></li>
+                    <li><a href="#" class="text-white/90 hover:text-white transition hover:underline">Patient Info</a></li>
+                    <li><a href="#" class="text-white/90 hover:text-white transition hover:underline">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Services -->
+            <div>
+                <h3 class="text-xl font-bold mb-6 border-b border-white/20 pb-3">Our Services</h3>
+                <ul class="space-y-3">
+                    <li><a href="#" class="text-white/90 hover:text-white transition hover:underline">Cardiology</a></li>
+                    <li><a href="#" class="text-white/90 hover:text-white transition hover:underline">Orthopedics</a></li>
+                    <li><a href="#" class="text-white/90 hover:text-white transition hover:underline">Pediatrics</a></li>
+                    <li><a href="#" class="text-white/90 hover:text-white transition hover:underline">Neurology</a></li>
+                    <li><a href="#" class="text-white/90 hover:text-white transition hover:underline">Maternity</a></li>
+                    <li><a href="#" class="text-white/90 hover:text-white transition hover:underline">Emergency Care</a></li>
+                    <li><a href="#" class="text-white/90 hover:text-white transition hover:underline">Diagnostics</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Contact -->
+            <div>
+                <h3 class="text-xl font-bold mb-6 border-b border-white/20 pb-3">Contact Us</h3>
+                <address class="not-italic">
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-map-marker-alt mt-1 mr-4 text-[#b3e0ff]"></i>
+                        <p>123 Hospital Road, Nairobi, Kenya</p>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-phone-alt mr-4 text-[#b3e0ff]"></i>
+                        <a href="tel:+254700000000" class="hover:underline">+254 700 000 000</a>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-envelope mr-4 text-[#b3e0ff]"></i>
+                        <a href="mailto:info@bloominghospital.org" class="hover:underline">info@bloominghospital.org</a>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-clock mr-4 text-[#b3e0ff]"></i>
+                        <p>Open 24/7 Emergency Services</p>
+                    </div>
+                </address>
+            </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <p>&copy; <span id="current-year"></span> Blooming World International Hospital. All rights reserved.</p>
+            </div>
+            <div class="flex space-x-6">
+                <a href="#" class="text-white/90 hover:text-white transition hover:underline text-sm">Privacy Policy</a>
+                <a href="#" class="text-white/90 hover:text-white transition hover:underline text-sm">Terms of Service</a>
+                <a href="#" class="text-white/90 hover:text-white transition hover:underline text-sm">Sitemap</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript for current year -->
+<script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
